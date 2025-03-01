@@ -144,3 +144,21 @@ document.getElementById('card-btn6').addEventListener('click',
         document.getElementById('navCount').innerText = navSum;
     }
 )
+// current date section
+document.addEventListener("DOMContentLoaded", function(){
+    const now = new Date();
+    const weekday = now.toLocaleDateString("en-US", { weekday: "short" });
+    const currentDate = now.toLocaleDateString("en-US", {
+        month: "short",day: "numeric",year: "numeric"
+      });
+      document.getElementById("current-Date").innerHTML = `${weekday}<br>${currentDate}`;
+})
+// background color change section
+const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+let index = 0;
+
+document.getElementById('navBtn').addEventListener('click',
+    function () {
+        document.body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+});
