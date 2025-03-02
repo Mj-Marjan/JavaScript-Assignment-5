@@ -2,7 +2,7 @@ const AllOutput = document.getElementById('All-history');
 document.getElementById('clear-history').addEventListener('click', 
     function(event){
         event.preventDefault();
-        AllOutput.innerText = '';
+        AllOutput.innerHTML = '';
     }
 )
 // 1st active history js
@@ -16,6 +16,7 @@ document.getElementById('card-btn').addEventListener('click',
         const newTime = new Date().toLocaleTimeString();
         const cardHeading = document.getElementById('1stCardHeading').innerText;
         outputHeading.innerText = `You have Complete The Task ${cardHeading} at ${newTime}`;
+        
         // task count section
         const taskCount = document.getElementById('task-count').innerText;
         const convertTaskCount = parseFloat(taskCount);
@@ -154,9 +155,8 @@ document.addEventListener("DOMContentLoaded", function(){
       document.getElementById("current-Date").innerHTML = `${weekday}<br>${currentDate}`;
 })
 // background color change section
-const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+const colors = ['#FF6F61', '#6B5B95', '#88B04B', '#F7CAC9', '#92A8D1', '#955251','red', 'blue', 'green', 'yellow', 'purple', 'orange'];
 let index = 0;
-
 document.getElementById('navBtn').addEventListener('click',
     function () {
         document.body.style.backgroundColor = colors[index];

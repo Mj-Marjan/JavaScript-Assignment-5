@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 second part</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F4F7FF]">
+    <section class="pt-5 mx-10 ">
+        <div class="navbar rounded-lg bg-base-100">
+            <div class="flex-1">
+                <img class="w-10 h-auto" src="assets/logo.png" alt="">
+                <a class="btn btn-ghost text-xl gap-0">Dev<span class="font-bold">Board</span></a>
+            </div>
+            <div class="flex-none gap-2">
+                <button id="backBtn" class="btn bg-blue-800 text-white">Back to Desk</button>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 mx-10">
+        <div class="flex justify-center items-center">
+            <h1 class="text-xl font-bold">Blogs</h1>
+        </div>
+        <div class="mt-10 bg-white p-4 rounded-lg">
+            <h1 class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">The way to select different element in the DOM is [getElimentById(),getElementsByClassName(),querySelectorAll(),querySelector(),getElementsByTagName(),getElementsByName()]</h4>
+        </div>
+        <div class="mt-5 bg-white p-4 rounded-lg">
+            <h1 class="font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">innerHTML = [Returns or sets the HTML content of the element.], innerText = [innerText return just content of the elements], textContent = [innerContent Return all content of the elements]</h4>
+        </div>
+        <div class="mt-5 bg-white p-4 rounded-lg">
+            <h1 class="font-semibold">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">Event delegation is a technique in the DOM where you add an event listener to the parent element, but use it to handle events on child elements. This eliminates the need to add event listeners to each child separately!</h4>
+        </div>
+        <div class="mt-5 bg-white p-4 rounded-lg">
+            <h1 class="font-semibold">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">Event bubbling is when an event occurs on a child element in the DOM, it flows upwards. That is, the event flows from the bottom up (child - parent - grandparent - document).</h4>
+        </div>
+        <div class="mt-5 bg-white p-4 rounded-lg">
+            <h1 class="font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">New elements can be created using document.createElement(),appendChild(): Can be added to the end of the parent element,removeChild(): Removes a child element from its parent.</h4>
+        </div>
+    </section>
+   <script src="java script/back.js"></script>
+</body>
+</html>
